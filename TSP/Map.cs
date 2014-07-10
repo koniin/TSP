@@ -8,7 +8,6 @@ namespace TSP
 {
     public class Map
     {
-
         [Obsolete("Warning: Uses fixed seed")]
         public IEnumerable<City> GetCities(int count, int maxX, int maxY)
         {
