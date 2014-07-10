@@ -1,0 +1,18 @@
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.exe.config
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.exe
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.pdb
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.csprojResolveAssemblyReference.cache
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\MainWindow.baml
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\MainWindow.g.cs
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\App.g.cs
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs_MarkupCompile.cache
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.g.resources
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.Properties.Resources.resources
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.csproj.GenerateResource.Cache
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.exe
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.pdb
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\bin\Debug\TSP.exe
+c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\bin\Debug\TSP.pdb
+C:\Code\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.exe.config
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.exe
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.pdb

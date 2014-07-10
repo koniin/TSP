@@ -1,0 +1,6 @@
+c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\bin\Debug\TSP.exe.config
+c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\bin\Debug\TSP.exe
+c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\bin\Debug\TSP.pdb
+c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\obj\Debug\TSP.csprojResolveAssemblyReference.cache
+c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\obj\Debug\TSP.exe
+c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\obj\Debug\TSP.pdb
