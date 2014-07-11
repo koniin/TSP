@@ -10,41 +10,34 @@ namespace TSP
     {
         static void Main(string[] args)
         {
-            /*
-            ProblemManager m = new ProblemManager();
+            Map m = new Map();
+            SolveGraph(m.GetCities(3, 10, 10));
 
-            SolveGraph(m.GetDirectedGraph());
-
-            SolveGraph(m.GetUnDirectedGraph());
-            */
             Console.Read();
         }
 
-        private static void SolveGraph(IEnumerable<City> nodes)
+        private static void SolveGraph(List<City> nodes)
         {
             Console.WriteLine("Shortest Path is: ");
 
-            Console.WriteLine("FirstRelationSolver");
-            ITSPSolver tspSolver = new FirstRelationTSPSolver();
-            GetSolution(nodes.First(), tspSolver);
-
             Console.WriteLine("Greedy");
-            tspSolver = new GreedyTSPSolver();
-            GetSolution(nodes.First(), tspSolver);
+            ITSPSolver tspSolver = new GreedyTSPSolver();
+            GetSolution(nodes, tspSolver);
+
+            Console.WriteLine("Genetic");
+            tspSolver = new GeneticTSPSolver();
+            GetSolution(nodes, tspSolver);
         }
 
-        private static void GetSolution(City startingNode, ITSPSolver tspSolver)
+        private static void GetSolution(List<City> nodes, ITSPSolver tspSolver)
         {
-            /*
-            foreach (Relation n in tspSolver.Solve(startingNode))
+            foreach (City n in tspSolver.Solve(nodes))
             {
-                Console.Write(n.Current.Name);
+                Console.Write(n.Name);
                 Console.Write(" -> ");
-                Console.Write(n.Next.Name);
-                Console.Write(", ");
-                Console.Write(n.Cost);
-                Console.Write("\n");
-            }*/
+            }
+            Console.Write(nodes[0].Name);
+            Console.WriteLine("\n");
         }
     }
 }

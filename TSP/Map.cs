@@ -9,14 +9,15 @@ namespace TSP
     public class Map
     {
         [Obsolete("Warning: Uses fixed seed")]
-        public IEnumerable<City> GetCities(int count, int maxX, int maxY)
+        public List<City> GetCities(int count, int maxX, int maxY)
         {
             Random rand = new Random(1);
-
+            List<City> cities = new List<City>();
             for (int i = 0; i < count; i++)
             {
-                yield return new City(rand.Next(maxX), rand.Next(maxY), i.ToString());
+                cities.Add(new City(rand.Next(maxX), rand.Next(maxY), i.ToString()));
             }
+            return cities;
         }
     }
 }

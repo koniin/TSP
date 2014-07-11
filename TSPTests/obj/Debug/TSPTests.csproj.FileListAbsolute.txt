@@ -1,0 +1,7 @@
+C:\Code\TSP\TSPTests\bin\Debug\TSPTests.dll
+C:\Code\TSP\TSPTests\bin\Debug\TSPTests.pdb
+C:\Code\TSP\TSPTests\obj\Debug\TSPTests.csprojResolveAssemblyReference.cache
+C:\Code\TSP\TSPTests\obj\Debug\TSPTests.dll
+C:\Code\TSP\TSPTests\obj\Debug\TSPTests.pdb
+C:\Code\TSP\TSPTests\bin\Debug\TSP.exe
+C:\Code\TSP\TSPTests\bin\Debug\TSP.pdb

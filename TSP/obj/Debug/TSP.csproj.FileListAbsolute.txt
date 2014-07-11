@@ -4,3 +4,9 @@ c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\bin\Debug\TSP.pdb
 c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\obj\Debug\TSP.csprojResolveAssemblyReference.cache
 c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\obj\Debug\TSP.exe
 c:\users\henke\documents\visual studio 2012\Projects\TSP\TSP\obj\Debug\TSP.pdb
+C:\Code\TSP\TSP\bin\Debug\TSP.exe.config
+C:\Code\TSP\TSP\bin\Debug\TSP.exe
+C:\Code\TSP\TSP\bin\Debug\TSP.pdb
+C:\Code\TSP\TSP\obj\Debug\TSP.csprojResolveAssemblyReference.cache
+C:\Code\TSP\TSP\obj\Debug\TSP.exe
+C:\Code\TSP\TSP\obj\Debug\TSP.pdb

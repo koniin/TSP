@@ -34,13 +34,13 @@ namespace VisualizeGraphs
             graphicsBuilder = new GraphicsBuilder();
             graph = new Graph(graphicsBuilder);
 
-            IEnumerable<City> cities = map.GetCities(15, 700, 500);
+            List<City> cities = map.GetCities(15, 700, 500);
 
             graph.Draw(GraphCanvas, cities);
             
             GreedyTSPSolver tspSolver = new GreedyTSPSolver();
             City start = cities.ElementAt(0);
-            IEnumerable<City> solution = tspSolver.Solve(start, cities.Where(c => c.Name != start.Name));
+            IEnumerable<City> solution = tspSolver.Solve(cities);
 
             graph.DrawSolution(GraphCanvas, new[] { start }.Concat(solution.Concat(new[] { start })));
         }

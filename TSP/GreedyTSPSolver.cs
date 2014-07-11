@@ -10,9 +10,10 @@ namespace TSP
     {
         private List<City> visitationOrder = new List<City>();
 
-        public IEnumerable<City> Solve(City startNode, IEnumerable<City> availableCities)
+        public List<City> Solve(List<City> availableCities)
         {
-            GetCheapestCityFrom(startNode, availableCities);
+            City firstCity = availableCities.First();
+            GetCheapestCityFrom(availableCities.First(), availableCities.Where(cc => cc.Name != firstCity.Name));
             return visitationOrder;
         }
 
@@ -36,26 +37,5 @@ namespace TSP
             visitationOrder.Add(next);
             GetCheapestCityFrom(next, availableCities.Where(cc => cc.Name != next.Name));
         }
-
-        /*
-        private void GetCheapestRelation(City currentNode)
-        {
-            Relation cheapestRelation = null;
-            int currentCost = int.MaxValue;
-            foreach (Relation r in currentNode.Relations)
-            {
-                if (r.Cost < currentCost && !relations.Any(re => re.Current.Name == r.Next.Name))
-                {
-                    currentCost = r.Cost;
-                    cheapestRelation = r;
-                }
-            }
-
-            if (cheapestRelation == null)
-                return;
-
-            relations.Add(cheapestRelation);
-            GetCheapestRelation(cheapestRelation.Next);
-        }*/
     }
 }

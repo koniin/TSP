@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FirstRelationTSPSolver.cs" />
+    <Compile Include="Chromosome.cs" />
+    <Compile Include="ChromosomePair.cs" />
+    <Compile Include="GeneticTSPSolver.cs" />
     <Compile Include="GreedyTSPSolver.cs" />
     <Compile Include="ITSPSolver.cs" />
     <Compile Include="City.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Math2D.cs" />
+    <Compile Include="Population.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

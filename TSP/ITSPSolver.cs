@@ -7,6 +7,6 @@ namespace TSP
 {
     public interface ITSPSolver
     {
-        IEnumerable<City> Solve(City startNode, IEnumerable<City> availableCities);
+        List<City> Solve(List<City> availableCities);
     }
 }

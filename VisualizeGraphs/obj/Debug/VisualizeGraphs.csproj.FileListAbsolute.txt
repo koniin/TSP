@@ -16,3 +16,15 @@ c:\Users\Henke\documents\visual studio 2012\Projects\TSP\VisualizeGraphs\bin\Deb
 C:\Code\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.exe.config
 C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.exe
 C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.pdb
+C:\Code\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.exe
+C:\Code\TSP\VisualizeGraphs\bin\Debug\VisualizeGraphs.pdb
+C:\Code\TSP\VisualizeGraphs\bin\Debug\TSP.exe
+C:\Code\TSP\VisualizeGraphs\bin\Debug\TSP.pdb
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.csprojResolveAssemblyReference.cache
+C:\Code\TSP\VisualizeGraphs\obj\Debug\MainWindow.baml
+C:\Code\TSP\VisualizeGraphs\obj\Debug\MainWindow.g.cs
+C:\Code\TSP\VisualizeGraphs\obj\Debug\App.g.cs
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs_MarkupCompile.cache
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.g.resources
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.Properties.Resources.resources
+C:\Code\TSP\VisualizeGraphs\obj\Debug\VisualizeGraphs.csproj.GenerateResource.Cache
