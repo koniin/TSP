@@ -48,7 +48,7 @@ namespace TSP
         {
             int populationSize = availableCities.Count;
 
-            Population pop = CreateRandomPopulation(availableCities, populationSize);
+            Population pop = Population.CreateRandomPopulation(availableCities, populationSize);
 
             Population nextGeneration = new Population();
             for (int i = 0; i < populationSize; i++)
@@ -72,20 +72,8 @@ namespace TSP
 
         public ChromosomePair GetHighestRankedChromosomes(List<Chromosome> chromosomes)
         {
-            return new ChromosomePair(chromosomes[0], chromosomes[1]);
-        }
-
-        public Population CreateRandomPopulation(List<City> availableCities, int populationSize)
-        {
-            Population p = new Population();
-            for (int i = 0; i < populationSize; i++)
-                p.Add(CreateRandomChromosome(availableCities));
-            return p;
-        }
-
-        public Chromosome CreateRandomChromosome(List<City> availableCities)
-        {
-            return new Chromosome(availableCities);
+            List<Chromosome> orderedChromosomes = chromosomes.OrderBy(c => c.Fitness()).ToList();
+            return new ChromosomePair(orderedChromosomes[0], orderedChromosomes[1]);
         }
 
         private bool ShouldPerformCrossover()

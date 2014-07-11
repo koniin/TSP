@@ -32,5 +32,21 @@ namespace TSPTests
             Chromosome c = new Chromosome(cities);
             Assert.AreEqual<double>(41.01219331, Math.Round(c.Fitness(), 8));
         }
+
+        [TestMethod]
+        public void Chromosome_CreateRandomChromosome()
+        {
+            List<City> cities = new List<City>();
+            cities.Add(new City(1, 1, "A"));
+            cities.Add(new City(5, 5, "B"));
+            cities.Add(new City(3, 3, "C"));
+            cities.Add(new City(4, 4, "D"));
+            cities.Add(new City(2, 2, "E"));
+
+            Chromosome c = new Chromosome(cities);
+            Chromosome randomC = Chromosome.CreateRandomChromosome(cities);
+
+            Assert.AreNotEqual<double>(c.Fitness(), randomC.Fitness());
+        }
     }
 }

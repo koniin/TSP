@@ -12,7 +12,7 @@ namespace TSP
 
         public Chromosome(List<City> cities) 
         {
-            Cities = cities;
+            Cities = new List<City>(cities);
         }
 
         public double Fitness()
@@ -21,6 +21,12 @@ namespace TSP
             for(int i = 0; i < Cities.Count - 1; i++)
                 fitness += Math2D.Distance(Cities[i].X, Cities[i].Y, Cities[i + 1].X, Cities[i + 1].Y);
             return fitness;
+        }
+
+        public static Chromosome CreateRandomChromosome(List<City> cities)
+        {
+            cities.Shuffle();
+            return new Chromosome(cities);
         }
     }
 }

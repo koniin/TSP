@@ -58,5 +58,20 @@ namespace TSPTests
 
             Assert.AreEqual(c, best);
         }
+
+        [TestMethod]
+        public void Population_CreateRandomPopulation()
+        {
+            List<City> cities = new List<City>();
+            cities.Add(new City(1, 1, "A"));
+            cities.Add(new City(2, 2, "B"));
+            cities.Add(new City(3, 3, "C"));
+            cities.Add(new City(4, 4, "D"));
+            cities.Add(new City(5, 5, "E"));
+
+            Population pop = Population.CreateRandomPopulation(cities, cities.Count);
+
+            Assert.AreEqual<int>(pop.Chromosomes.Count, cities.Count);
+        }
     }
 }

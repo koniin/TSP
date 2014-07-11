@@ -34,5 +34,13 @@ namespace TSP
             }
             return bestChromosome;
         }
+
+        public static Population CreateRandomPopulation(List<City> availableCities, int populationSize)
+        {
+            Population p = new Population();
+            for (int i = 0; i < populationSize; i++)
+                p.Add(Chromosome.CreateRandomChromosome(availableCities));
+            return p;
+        }
     }
 }
