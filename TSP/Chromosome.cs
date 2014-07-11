@@ -28,5 +28,9 @@ namespace TSP
             cities.Shuffle();
             return new Chromosome(cities);
         }
+
+        public void Mutate()
+        {
+        }
     }
 }

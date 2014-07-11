@@ -49,6 +49,17 @@ namespace TSP
             int populationSize = availableCities.Count;
 
             Population pop = Population.CreateRandomPopulation(availableCities, populationSize);
+            Population endGeneration = GenerateNewGeneration(populationSize, pop);
+
+            return endGeneration.GetBestChromosome().Cities;
+        }
+
+        private int generations = 100;
+        private int currentGeneration = 0;
+
+        private Population GenerateNewGeneration(int populationSize, Population pop)
+        {
+            currentGeneration = currentGeneration + 1;
 
             Population nextGeneration = new Population();
             for (int i = 0; i < populationSize; i++)
@@ -57,17 +68,20 @@ namespace TSP
 
                 Chromosome child;
                 if (ShouldPerformCrossover())
-                    child = PerformCrossover(parents);
+                    child = parents.CreateCrossoverChild();
                 else
-                    child = CopyParents(parents);
+                    child = parents.CreateChild();
 
                 if (ShouldMutate())
-                    child = MutateChild(child);
+                    child.Mutate();
 
                 nextGeneration.Add(child);
             }
 
-            return nextGeneration.GetBestChromosome().Cities;
+            if (currentGeneration < generations)
+                nextGeneration = GenerateNewGeneration(populationSize, nextGeneration);
+
+            return nextGeneration;
         }
 
         public ChromosomePair GetHighestRankedChromosomes(List<Chromosome> chromosomes)
@@ -84,21 +98,6 @@ namespace TSP
         private bool ShouldMutate()
         {
             return true;
-        }
-
-        private Chromosome PerformCrossover(ChromosomePair parents)
-        {
-            return new Chromosome(parents.Father.Cities);
-        }
-
-        private Chromosome CopyParents(ChromosomePair parents)
-        {
-            return new Chromosome(parents.Father.Cities);
-        }
-
-        private Chromosome MutateChild(Chromosome child)
-        {
-            return child;
         }
     }
 }

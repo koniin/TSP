@@ -63,7 +63,6 @@ namespace TSPTests
             cities3.Add(new City(4, 4, "D"));
             cities3.Add(new City(2, 2, "E"));
 
-
             Chromosome c = new Chromosome(cities);
             Chromosome c2 = new Chromosome(cities2);
             Chromosome c3 = new Chromosome(cities3);

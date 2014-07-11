@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ChromosomePairTests.cs" />
     <Compile Include="ChromosomeTests.cs" />
     <Compile Include="GeneticTSPSolverTest.cs" />
     <Compile Include="MapTests.cs" />

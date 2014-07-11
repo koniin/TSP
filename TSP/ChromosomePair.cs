@@ -16,5 +16,15 @@ namespace TSP
             Father = father;
             Mother = mother;
         }
+
+        public Chromosome CreateCrossoverChild() 
+        {
+            return Father;
+        }
+        
+        public Chromosome CreateChild()
+        {
+            return Father;
+        }
     }
 }
